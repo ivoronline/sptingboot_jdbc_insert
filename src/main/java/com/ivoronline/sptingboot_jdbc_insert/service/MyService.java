@@ -22,8 +22,7 @@ public class MyService {
     Connection connection = dataSource.getConnection();
 
     //INSERT RECORDS
-    String    sql       = "INSERT INTO PERSON (NAME, AGE) VALUES ('"+name+"',+"+age+");" +
-                          "INSERT INTO PERSON (NAME, AGE) VALUES ('Susan'   ,20      )";
+    String    sql       = "INSERT INTO PERSON (NAME, AGE) VALUES ('"+name+"',+"+age+")";
     Statement statement = connection.createStatement();
     int       success   = statement.executeUpdate(sql);
 
